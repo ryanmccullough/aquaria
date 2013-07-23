@@ -32,8 +32,10 @@ var options = {
     cert: fs.readFileSync('public/certs/cert.pem')
 };
 
-//
-var server = https.createServer(options, app);
+//Create a server object
+//http(app)
+//https(options, app)
+var server = http.createServer(app);
 console.log('Node server started on port %s', process.env.PORT);
 
 //
