@@ -1,0 +1,17 @@
+block append head
+  style body { padding-top: 70px; }
+
+block prepend body
+  div.navbar.navbar-inverse.navbar-fixed-top
+    div.container
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.nav-collapse')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/') Aquaria
+      div.nav-collapse.collapse
+        ul.nav.navbar-nav
+          li: a(href='/socket') socket.io
+          li: a(href='/status') Status
+          li: a(href='/500') 500
+          li: a(href='/404') 404

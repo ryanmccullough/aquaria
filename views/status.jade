@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div.container
+    div.page-header
+      h1 Raspberry Pi <small>Check the status.</small>
+    div.panel.panel
+      div.panel-heading Raspberry Pi Status 
+      
+block append foot
+    script(defer, src='/js/status.js')

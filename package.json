@@ -1,0 +1,12 @@
+{
+    "name": "aquaria",
+    "version": "0.0.1",
+    "author": "Ryan McCullough <github.com/ryanmccullough>",
+    "description": "real-time monitoring with node.js and raspberry pi.",
+    "dependencies" : {
+        "express"   :  "*",
+        "jade" :  "*",
+        "socket.io" :  "*",
+        "connect"    :  "*",
+    }
+}

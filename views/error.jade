@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div.container
+    div.jumbotron
+      div.text-center
+        h1 !{error.name} <small class='error'>Error !{error.code}</small>
+        p= error.desc
+        p Sorry about that!
+        p
+          strong Press the button below to return to the homepage:
+        a.btn.btn-default(href='/')
+          span.glyphicon.glyphicon-home  Take Me Home

@@ -1,0 +1,23 @@
+doctype 5
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/bootstrap.css')
+    link(rel='stylesheet', href='/css/bootstrap-glyphicons.css')
+  body
+    block head
+        include head
+
+    block content
+      div.container    
+        div.jumbotron
+          h1.text-center layout.jade <small>in /views
+          p.text-center If you are seeing this page, you need to set up some content for this render. If the body block is not overwritten, the default in layout.jade will be displayed instead.
+    block foot
+      footer
+        script(src='http://code.jquery.com/jquery-2.0.3.js')
+        script(defer, src='/js/bootstrap.js')
+        //script(defer, src='/js/script.js')
+        script(defer, src='/socket.io/socket.io.js')
